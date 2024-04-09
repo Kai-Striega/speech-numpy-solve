@@ -1,0 +1,16 @@
+name: numpy-solve
+channels:
+  - conda-forge
+dependencies:
+  # Runtime dependencies
+  - python
+  - numpy
+  - scipy
+  - perfplot
+  # Tests
+  - pytest
+  # Linting
+  - ruff>=0.3.0
+  # Misc tools
+  - ipython
+  - jupyterlab
