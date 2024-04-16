@@ -7,6 +7,7 @@ dependencies:
   - numpy
   - scipy
   - perfplot
+  - sympy
   # Tests
   - pytest
   # Linting
@@ -14,3 +15,6 @@ dependencies:
   # Misc tools
   - ipython
   - jupyterlab
+  - ipywidgets
+  # For plotting
+  - matplotlib 
