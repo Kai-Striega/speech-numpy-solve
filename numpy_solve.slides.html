@@ -7454,7 +7454,7 @@ main {
 <h1 id="Who-am-I?">Who am I?<a class="anchor-link" href="#Who-am-I?">¶</a></h1><ul>
 <li>Data engineer at BHP</li>
 <li>Programming as a hobby since 2009</li>
-<li>Active in the scientifc Python ecosystem<ul>
+<li>Active in the scientific Python ecosystem<ul>
 <li>Maintainer of SciPy</li>
 <li>Triage member of NumPy</li>
 </ul>
@@ -7481,7 +7481,6 @@ main {
 <li>A quick review of linear systems</li>
 <li>How NumPy solves linear systems</li>
 <li>SciPy's improvements for systems that are sparse or have special structure</li>
-<li>Other ways of solving linear systems (if we have time)</li>
 </ul>
 </li>
 <li>Slides available at: <a href="https://github.com/Kai-Striega/speech-numpy-solve">https://github.com/Kai-Striega/speech-numpy-solve</a></li>
@@ -7498,7 +7497,7 @@ main {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="NumPy-and-SciPy">NumPy and SciPy<a class="anchor-link" href="#NumPy-and-SciPy">¶</a></h1><ul>
 <li>NumPy and SciPy are libraries in Python</li>
-<li>Foundational in the scientific python ecostystem</li>
+<li>Foundational in the scientific python ecosystem</li>
 <li>Downloaded &gt;100 million times a month</li>
 </ul>
 </div>
@@ -7626,7 +7625,7 @@ f(x_1, x_2, \ldots, x_n) = a_1 x_1 + a_2 x_2 + \ldots + a_n x_n
 $$</p>
 <ul>
 <li>in two dimensions, linear equations represent straight lines</li>
-<li>...which you have probably seen in highschool as $y = mx + b$</li>
+<li>...which you have probably seen in high school as $y = mx + b$</li>
 <li>in three dimensions linear equations represent planes</li>
 </ul>
 </div>
@@ -8107,7 +8106,7 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Back-Substituion">Back Substituion<a class="anchor-link" href="#Back-Substituion">¶</a></h3>
+<h3 id="Back-Substitution">Back Substitution<a class="anchor-link" href="#Back-Substitution">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8144,7 +8143,7 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>By the last equation we obtain: $$ x_n = \frac{y_n}{u_{n,n}} $$</li>
-<li>By induction we can solve the solution $x$ by back substiution:</li>
+<li>By induction we can solve the solution $x$ by back substitution:</li>
 </ul>
 <p>$$ x_i = \frac{y_i - \sum_{k=i + 1}^{n} u_{i,k}x_k}{u_{i,i}} $$</p>
 </div>
@@ -8520,7 +8519,7 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>If $\varepsilon$ is on the order of machine accuracy, the $4$ in $4-\frac{6}{\varepsilon}$ becomes insignifcant (because $\frac{6}{\varepsilon}$ is very large)</li>
+<li>If $\varepsilon$ is on the order of machine accuracy, the $4$ in $4-\frac{6}{\varepsilon}$ becomes insignificant (because $\frac{6}{\varepsilon}$ is very large)</li>
 <li>This means that during computation we actually use:</li>
 </ul>
 <p>$$ L^{\prime} = L, U^{\prime} = \begin{bmatrix} 1 &amp; 1 &amp; 1 \\ 0 &amp; \varepsilon &amp; 3 \\ 0 &amp; 0 &amp; -\frac{6}{\varepsilon} \\ \end{bmatrix} $$</p>
@@ -8562,7 +8561,7 @@ x^{\prime}
 = \begin{bmatrix} \frac{11 - 2 \varepsilon}{3} \\ -2 \\ \frac{2\varepsilon - 2}{3} \end{bmatrix}
 \approx \begin{bmatrix} \frac{11}{3} \\ -2 \\ -\frac{2}{3} \end{bmatrix}
 $$</p>
-<p>Clearly $x$ and $x^{\prime}$ are signifficantly different even when $L^{\prime}$ and $U^{\prime}$ are close to $L$ and $U$</p>
+<p>Clearly $x$ and $x^{\prime}$ are significantly different even when $L^{\prime}$ and $U^{\prime}$ are close to $L$ and $U$</p>
 </div>
 </div>
 </div>
@@ -8623,9 +8622,9 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/tmp/ipykernel_71492/2020444748.py:14: RuntimeWarning: divide by zero encountered in divide
+<pre>/tmp/ipykernel_27357/2020444748.py:14: RuntimeWarning: divide by zero encountered in divide
   factor = U[i+1:, i] / U[i, i]
-/tmp/ipykernel_71492/2020444748.py:16: RuntimeWarning: invalid value encountered in multiply
+/tmp/ipykernel_27357/2020444748.py:16: RuntimeWarning: invalid value encountered in multiply
   U[i+1:] -= factor[:, np.newaxis] * U[i]
 </pre>
 </div>
@@ -8663,7 +8662,7 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>Since the order of our equations does not matter we can swap rows</li>
-<li>We do this using a <a href="https://mathworld.wolfram.com/PermutationMatrix.html">permuation matrix</a>, $P_i$</li>
+<li>We do this using a <a href="https://mathworld.wolfram.com/PermutationMatrix.html">permutation matrix</a>, $P_i$</li>
 <li>Each permutation matrix allows us to swap different rows</li>
 </ul>
 </div>
@@ -8677,7 +8676,7 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>Let's look at coloumn 1 of $A$</li>
+<li>Let's look at column 1 of $A$</li>
 <li>We can see the number of largest magnitude is 4</li>
 <li>Let's swap rows 1 and 3</li>
 </ul>
@@ -8777,7 +8776,7 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>Inlcudes paths for dense matrices of special structure<ul>
+<li>Includes paths for dense matrices of special structure<ul>
 <li><code>solve</code>: symmetric, hermitian and positive definite matrices</li>
 <li><code>solve_banded</code></li>
 <li><code>solveh_banded</code></li>
@@ -8809,7 +8808,7 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>Takes an ndarray or sparse system and solves it</li>
+<li>Takes a ndarray or sparse system and solves it</li>
 <li>Will convert ndarrays to a CSC or CSR array</li>
 <li>This will add overhead</li>
 <li>Recommend to use sparse arrays when working with sparse systems</li>
@@ -8827,7 +8826,7 @@ $$</p>
 <h3 id="CSR-Arrays">CSR Arrays<a class="anchor-link" href="#CSR-Arrays">¶</a></h3><ul>
 <li>Compressed Sparse Row Array</li>
 <li>Stores the data in three 1-D arrays:<ul>
-<li><strong>V</strong> stores the rows contiguously</li>
+<li><strong>V</strong> stores the values as rows contiguously</li>
 <li><strong>COL_INDEX</strong> stores the column index</li>
 <li><strong>ROW_INDEX</strong> stores the row index</li>
 </ul>
@@ -8893,7 +8892,7 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1.95 s ± 109 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>1.88 s ± 38.2 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -8927,7 +8926,7 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>389 ms ± 3.98 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+<pre>383 ms ± 4.74 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </pre>
 </div>
 </div>
@@ -8954,7 +8953,7 @@ $$</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>18.4 ms ± 168 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<pre>17.8 ms ± 184 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </pre>
 </div>
 </div>
@@ -8967,7 +8966,7 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Sparse-arrays-are-not-a-panacea">Sparse arrays are not a panacea<a class="anchor-link" href="#Sparse-arrays-are-not-a-panacea">¶</a></h2>
+<h3 id="Sparse-arrays-are-not-a-panacea">Sparse arrays are not a panacea<a class="anchor-link" href="#Sparse-arrays-are-not-a-panacea">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8983,30 +8982,6 @@ $$</p>
 </div>
 </div>
 </div></div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1e4ab98b-0ecc-458c-aeac-09b79579a2e2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Iterative-methods">Iterative methods<a class="anchor-link" href="#Iterative-methods">¶</a></h1>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=278a51de-2e7e-42b1-b81e-d284fee36528">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li></li>
-</ul>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9014c0bd-dc15-4a68-9e7f-15761da0e0c9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
